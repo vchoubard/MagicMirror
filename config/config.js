@@ -15,14 +15,17 @@ var config = {
 	modules: [
 		{
 			module: 'alert',
+			classes: 'everyone'
 		},
 		{
 			module: "updatenotification",
-			position: "top_bar"
+			position: "top_bar",
+			classes: 'everyone'
 		},
 		{
 			module: 'clock',
-			position: 'top_left'
+			position: 'top_left',
+			classes: 'everyone'
 		},
 		{
 			module: 'calendar',
@@ -40,26 +43,8 @@ var config = {
 		},
 		{
 			module: 'compliments',
-			position: 'lower_third'
-		},
-		{
-			module: 'currentweather',
-			position: 'top_right',
-			config: {
-				location: 'New York',
-				locationID: '',  //ID from http://www.openweathermap.org
-				appid: 'YOUR_OPENWEATHER_API_KEY'
-			}
-		},
-		{
-			module: 'weatherforecast',
-			position: 'top_right',
-			header: 'Weather Forecast',
-			config: {
-				location: 'New York',
-				locationID: '5128581',  //ID from http://www.openweathermap.org
-				appid: 'YOUR_OPENWEATHER_API_KEY'
-			}
+			position: 'lower_third',
+			classes: 'everyone'
 		},
 		{
 			module: 'newsfeed',
@@ -73,7 +58,8 @@ var config = {
 				],
 				showSourceTitle: true,
 				showPublishDate: true
-			}
+			},
+			classes: 'default'
 		},
 		{
 			module: 'MMM-Facial-Recognition',
@@ -84,7 +70,7 @@ var config = {
 				// positive match.  Confidence values below this threshold will be considered
 				// a positive match because the lower the confidence value, or distance, the
 				// more confident the algorithm is that the face was correctly detected.
-				lbphThreshold: 50,
+				lbphThreshold: 70,
 				fisherThreshold: 250,
 				eigenThreshold: 3000,
 				// force the use of a usb webcam on raspberry pi (on other platforms this is always true automatically)
