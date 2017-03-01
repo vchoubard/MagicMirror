@@ -313,6 +313,7 @@ var MM = (function() {
 		 * return array - Filtered collection of modules.
 		 */
 		var withClass = function(className) {
+			debugger;
 			var searchClasses = className;
 			if (typeof className === "string") {
 				searchClasses = className.split(" ");
@@ -323,7 +324,7 @@ var MM = (function() {
 
 				for (var c in searchClasses) {
 					var searchClass = searchClasses[c];
-					if (classes.indexOf(searchClass.toLowerCase()) !== -1) {
+					if (searchClass != null && classes.indexOf(searchClass.toLowerCase()) !== -1) {
 						return true;
 					}
 				}

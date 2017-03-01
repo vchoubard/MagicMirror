@@ -59,7 +59,7 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			},
-			classes: 'default'
+			classes: 'everyone'
 		},
 		{
 			module: 'MMM-Facial-Recognition',
